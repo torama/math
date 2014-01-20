@@ -7,6 +7,7 @@ import org.apache.wicket.markup.head.CssReferenceHeaderItem;
 import org.apache.wicket.markup.head.IHeaderResponse;
 import org.apache.wicket.markup.head.JavaScriptReferenceHeaderItem;
 import org.apache.wicket.markup.html.basic.Label;
+import org.apache.wicket.markup.html.link.Link;
 import org.apache.wicket.markup.html.WebPage;
 
 public class HomePage extends WebPage {
@@ -16,6 +17,17 @@ public class HomePage extends WebPage {
 		super(parameters);
 
 		add(new Label("version", getApplication().getFrameworkSettings().getVersion()));
+		add(new Link<Object>("impressum-link"){
+			/**
+			 * 
+			 */
+			private static final long serialVersionUID = 1L;
+
+			@Override
+			public void onClick() {
+				setResponsePage(Impressum.class);
+			}
+		});
     }
 	
 	@Override public void renderHead(IHeaderResponse response) {
