@@ -28,6 +28,7 @@ public class HomePage extends WebPage {
 				setResponsePage(Impressum.class);
 			}
 		});
+		add(new HeaderPanel("testpanel"));
     }
 	
 	@Override public void renderHead(IHeaderResponse response) {
