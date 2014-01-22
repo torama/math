@@ -8,6 +8,37 @@
 		<p><wicket:container wicket:id="version">1.5-SNAPSHOT</wicket:container></p>
 		<a href="" wicket:id="impressum-link">Impressum</a>
 		<div wicket:id="testpanel"></div>
+		<label wicket:id="label"></label>
+		
+		<button wicket:id="reload">Nachladen</button>
+		
 		<wicket:child></wicket:child>
+		
+		<div wicket:id="testborder">
+			<span wicket:id="childTag"></span>
+		</div>
+		
+		<div wicket:id="fragment-container">
+		</div>
+		<span wicket:id="frag-random"></span>
+		
+		<wicket:fragment wicket:id="frag-var-1">
+			Fragmenttype 1
+		</wicket:fragment>
+		
+		<wicket:fragment wicket:id="frag-var-2">
+			<span wicket:id="frag2-specific" class="fragment2"></span>
+		</wicket:fragment>
+		
+
+		<div wicket:id="information-box">
+			Message: <span wicket:id="information-message"></span>
+			<wicket:enclosure> 
+				<label>Additional information: <span wicket:id="additional-information"></span></label>
+			</wicket:enclosure>
+			<wicket:enclosure> 
+				<label>Additional information2: <span wicket:id="additional-information2"></span></label>
+			</wicket:enclosure>
+		</div>
 	</body>
 </html>
