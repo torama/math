@@ -26,6 +26,7 @@ public class HomePage extends WebPage {
 	private Label firstLabel;
 	private Label secondLabel;
 	
+	
 	public HomePage(final PageParameters parameters) {
 		super(parameters);
 		firstLabel = new Label("label", "FirstLabel");
@@ -129,6 +130,8 @@ public class HomePage extends WebPage {
 		});
 		
 		this.add(marktest);
+		
+		
 	}
 	
 	@Override
